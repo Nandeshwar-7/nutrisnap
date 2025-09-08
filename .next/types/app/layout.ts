@@ -1,4 +1,4 @@
-// File: C:\Users\CawDev\Desktop\nutrisnap\nutrisnap\app\layout.js
+// File: C:\Users\CawDev\OneDrive\Desktop\nutrisnap\app\layout.js
 import * as entry from '../../../app/layout.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 
