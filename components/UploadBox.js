@@ -42,9 +42,7 @@ export default function UploadBox({ onAnalyzed }) {
     try {
       const form = new FormData();
       form.append('file', fileObj);
-      const { data } = await axios.post('/api/analyze', form, {
-        headers: { 'Content-Type': 'multipart/form-data' },
-      });
+      const { data } = await axios.post('/api/analyze', form);
       onAnalyzed?.(data);
     } catch (err) {
       const serverMsg = err?.response?.data?.error;
