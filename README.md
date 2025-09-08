@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # NutriSnap
 
 Analyze a food photo with Gemini and get nutrition insights.
@@ -37,3 +38,6 @@ App runs at `http://localhost:3000`.
 - `lib/` Gemini client
 - `pages/api/` API routes
 
+=======
+# nutrisnap
+>>>>>>> 81ea0e13c1a1f320c4cadfc3a3bf914919ed5994
