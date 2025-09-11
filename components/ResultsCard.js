@@ -19,6 +19,22 @@ export default function ResultsCard({ result }) {
           <div className="space-y-3">
             <h2 className="text-xl font-semibold">{result.foodName}</h2>
             <p className="text-neutral-700">Estimated Calories: {result.estimatedCalories}</p>
+            {result.per100g && (
+              <div className="mt-2 grid grid-cols-1 sm:grid-cols-3 gap-3">
+                <div className="rounded-md border border-neutral-200 p-3">
+                  <p className="text-xs text-neutral-500">Calories (per 100g)</p>
+                  <p className="text-sm font-medium">{Number(result.per100g.calories ?? 0)} kcal</p>
+                </div>
+                <div className="rounded-md border border-neutral-200 p-3">
+                  <p className="text-xs text-neutral-500">Carbohydrates (per 100g)</p>
+                  <p className="text-sm font-medium">{Number(result.per100g.carbohydrates ?? 0)} g</p>
+                </div>
+                <div className="rounded-md border border-neutral-200 p-3">
+                  <p className="text-xs text-neutral-500">Protein (per 100g)</p>
+                  <p className="text-sm font-medium">{Number(result.per100g.protein ?? 0)} g</p>
+                </div>
+              </div>
+            )}
             <div>
               <div className="flex items-center justify-between text-sm text-neutral-600">
                 <span>Health Score</span>
